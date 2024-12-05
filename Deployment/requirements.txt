@@ -1,0 +1,11 @@
+streamlit
+joblib
+pandas
+numpy
+vaderSentiment
+transformers
+torch
+nltk
+beautifulsoup4
+requests
+yfinance
