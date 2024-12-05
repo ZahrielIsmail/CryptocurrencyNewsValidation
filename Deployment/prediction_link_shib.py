@@ -99,7 +99,7 @@ def extract_coindesk_article_content(url):
 
 
 # Load your model using joblib
-model = joblib.load('decision_tree_linear_regression_Shib_V2.pkl')
+model = joblib.load('Deployment/decision_tree_linear_regression_Shib_V2.pkl')
 
 # Placeholder for mean and standard deviation of the original price movements
 mean_price_movement = 3.301886194231828e-08  
