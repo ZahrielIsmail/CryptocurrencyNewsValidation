@@ -16,20 +16,20 @@ if page == "Home":
     """)
 
 elif page == "Prediction Link (Ethereum)":
-    import prediction_link_ethereum
+    import Deployment.prediction_link_ethereum as prediction_link_ethereum
     prediction_link_ethereum.run()
 elif page == "Prediction Link (Cardano)":
-    import prediction_link_cardano
+    import Deployment.prediction_link_cardano as prediction_link_cardano
     prediction_link_cardano.run()
 elif page == "Prediction Link (Shib)":
-    import prediction_link_shib
+    import Deployment.prediction_link_shib as prediction_link_shib
     prediction_link_shib.run()
 elif page == "Information":
     st.write("# Model Information")
     st.write("This section provides information about the models used in this app.")
 
     # Ethereum Information
-    st.image("Ethereum_Performance.png", caption="Ethereum Model Performance", use_container_width=True)
+    st.image("Deployment/Ethereum_Performance.png", caption="Ethereum Model Performance", use_container_width=True)
     st.write("### Ethereum:")
     st.write("- **Best Model:** DT + GB")
     st.write("- **Performance:**")
@@ -40,7 +40,7 @@ elif page == "Information":
     st.write("- **Insight:** The inclusion of GB in the best models suggests that Ethereum data contains complex, non-linear relationships, poorly captured by simpler models like LR.")
 
     # Cardano Information
-    st.image("Cardano_Performance.png", caption="Cardano Model Performance", use_container_width=True)
+    st.image("Deployment/Cardano_Performance.png", caption="Cardano Model Performance", use_container_width=True)
     st.write("### Cardano:")
     st.write("- **Best Model:** DT + GB")
     st.write("- **Performance:**")
@@ -51,7 +51,7 @@ elif page == "Information":
     st.write("- **Insight:** High errors across models and the negative R-squared value indicate significant modeling challenges, such as high complexity and noise in Cardano data.")
 
     # Shiba Inu Information
-    st.image("Shiba_Inu_Performance.png", caption="Shiba Inu Model Performance", use_container_width=True)
+    st.image("Deployment/Shiba_Inu_Performance.png", caption="Shiba Inu Model Performance", use_container_width=True)
     st.write("### Shiba Inu:")
     st.write("- **Best Model:** LR + DT")
     st.write("- **Performance:**")
