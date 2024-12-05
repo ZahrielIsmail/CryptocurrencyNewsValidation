@@ -99,7 +99,7 @@ def extract_coindesk_article_content(url):
 
 
 # Load your model using joblib
-model = joblib.load('decision_tree_gradient_boosting_Cardano_V2.pkl')
+model = joblib.load('Deployment/decision_tree_gradient_boosting_Cardano_V2.pkl')
 
 mean_price_movement = -0.0009074429014943693  
 std_price_movement = 0.02102401042451418 
