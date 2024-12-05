@@ -53,7 +53,7 @@ def get_finbert_sentiment(text):
     return positive_score, neutral_score, negative_score
 
 # Load your model using joblib
-model = joblib.load('decision_tree_gradient_boosting_Ethereum_V2.pkl')
+model = joblib.load('Deployment/decision_tree_gradient_boosting_Ethereum_V2.pkl')
 
 # Placeholder for mean and standard deviation of the original price movements
 mean_price_movement = 0.0  # Replace with actual mean value
