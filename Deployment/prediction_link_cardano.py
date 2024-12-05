@@ -36,7 +36,7 @@ def get_eth_usd_price_on_date(date):
     # Fetch historical data for ETH-USD
     eth_data = yf.download('ADA-USD', start=date, end=date + timedelta(days=1))
     if not eth_data.empty:
-        return eth_data['Close'][0]
+        return eth_data['Close'].iloc[0]
     return None
 
 
