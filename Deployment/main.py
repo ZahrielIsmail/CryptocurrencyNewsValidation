@@ -16,13 +16,13 @@ if page == "Home":
     """)
 
 elif page == "Prediction Link (Ethereum)":
-    import Deployment.prediction_link_ethereum as prediction_link_ethereum
+    from . import prediction_link_ethereum
     prediction_link_ethereum.run()
 elif page == "Prediction Link (Cardano)":
-    import Deployment.prediction_link_cardano as prediction_link_cardano
+    from . import prediction_link_cardano
     prediction_link_cardano.run()
 elif page == "Prediction Link (Shib)":
-    import Deployment.prediction_link_shib as prediction_link_shib
+    from . import prediction_link_shib
     prediction_link_shib.run()
 elif page == "Information":
     st.write("# Model Information")
