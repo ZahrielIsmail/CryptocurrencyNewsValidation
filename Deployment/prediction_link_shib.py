@@ -40,9 +40,6 @@ def get_eth_usd_price_on_date(date):
     return None
 
 
-# Download the stopwords for NLTK if you haven't already
-nltk.download('stopwords')
-stop_words = set(stopwords.words('english'))
 
 # Initialize Vader Sentiment Analyzer
 vader_analyzer = SentimentIntensityAnalyzer()
