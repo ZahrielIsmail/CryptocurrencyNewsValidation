@@ -9,4 +9,4 @@ nltk
 beautifulsoup4
 requests
 yfinance
-scikit-learn
+scikit-learn==0.24.2
